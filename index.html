@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box clock_box">
+            <div class="date">
+                <p class="style_date"></p>
+            </div>
+            <div class="clock">
+                <p class="style_hour"></p>
+            </div>
+        </div>
+        <div class="box stopwatch_box flex_box">
+            <div class="left_side">
+                <div class="stopwatch">
+                    <p class="style_stopwatch">00:00:00.00</p>
+                </div>
+                <form action="" name="formStopwatch">
+                    <input type="button" value="START" name="btnStopwatchStart" class="btn">
+                    <input type="button" value="LOOP" name="btnStopwatchLoop" class="btn" disabled>
+                    <input type="button" value="STOP" name="btnStopwatchStop" class="btn" disabled>
+                    <input type="button" value="RESET" name="btnStopwatchReset" class="btn" disabled>
+                </form>
+            </div>
+            <div class="right_side">
+                <div class="loop_box">
+                    <ul class="list_loop"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="box timer_box flex_box">
+            <div class="left_side">
+                <div class="set_minute">
+                    <p class="style_set_minute">00</p>
+                </div>
+                <div class="label_minute">
+                    <p class="style_label_minute">minute</p>
+                </div>
+                <form name="setTime">
+                    <input type="button" value="+" name="plus" class="btn btn_set_time">
+                    <input type="button" value="-" name="subtract" class="btn btn_set_time" disabled>
+                </form>
+            </div>
+            <div class="right_side">
+                <div class="timer">
+                    <p class="style_timer">00:00</p>
+                </div>
+                <form name="controlTimer">
+                    <input type="button" value="START" name="btnTimerStart" class="btn" disabled>
+                    <input type="button" value="STOP" name="btnTimerStop" class="btn" disabled>
+                    <input type="button" value="RESET" name="btnTimerReset" class="btn" disabled>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

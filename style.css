@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*variables*/
+:root {
+    --mainColor: #399AB0;
+    --fontSizeBig: 8em;
+    --fontSizeMiddle: 5em;
+    --fontSizeSmall: 3em;
+    --fontFamily: "digital";
+}
+
+@font-face {
+    font-family: "digital";
+    src: url(fonts/digital-7.ttf);
+}
+
+.flex_box {
+    display: flex;
+}
+
+body {
+    font-family: var(--fontFamily);
+    color: var(--mainColor);
+    background-color: #000;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 920px;
+    min-width: 900px;
+}
+
+.box {
+    padding: 50px 0 0;
+    position: absolute;
+    border: 1px solid #252525;
+    height: 280px;
+    width: 100%;
+    background: linear-gradient(to top, #000000, #001125, #000000);
+}
+
+.left_side,
+.right_side {
+    width: 50%;
+}
+
+.clock_box {
+    top: 0;
+}
+
+.stopwatch_box {
+
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* .stopwatch_box p {
+    text-align: left;
+    margin-left: 135px;
+} */
+
+
+.timer_box {
+    padding: 20px 0 0;
+    bottom: 0;
+}
+
+.style_date,
+.style_label_minute {
+    font-size: var(--fontSizeSmall);
+}
+
+.style_hour,
+.style_set_minute,
+.style_timer {
+    font-size: var(--fontSizeBig);
+}
+
+.style_stopwatch {
+    font-size: var(--fontSizeMiddle);
+}
+
+.loop_box {
+    border: 1px solid #161616;
+    border-radius: 4px;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    background: linear-gradient(to top, #000000, #001125);
+    height: 180px;
+    overflow: hidden;
+}
+
+.list_loop {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+.btn {
+    border: none;
+    border: 1px solid var(--mainColor);
+    border-radius: 4px;
+    color: var(--mainColor);
+    margin: 15px 12px 0;
+    height: 40px;
+    padding: 0 10px;
+    background: linear-gradient(to top, #000000, #001125);
+    transition-duration: 0.8s;
+    transition-property: font-weight, text-shadow;
+}
+
+.btn_disabled {
+    color: #001125;
+}
+
+.btn_set_time {
+    width: 40px;
+}
+
+.btn:hover {
+    text-shadow: 0 0 15px var(--mainColor);
+}
